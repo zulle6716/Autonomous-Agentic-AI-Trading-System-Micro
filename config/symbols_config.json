@@ -1,0 +1,71 @@
+{
+  "US100Cash": {
+    "description": "US 100 Index Cash (Nasdaq 100)",
+    "point_size": 0.01,
+    "digits": 2,
+    "min_lot": 0.1,
+    "max_lot": 240.0,
+    "lot_step": 0.1,
+    "typical_spread_points": 290,
+    "max_allowed_spread_points": 600,
+    "contract_size": 1.0,
+    "trading_sessions_utc": [
+      {
+        "name": "Pre_Market",
+        "start": "12:00",
+        "end": "14:30"
+      },
+      {
+        "name": "US_Cash_Session",
+        "start": "14:30",
+        "end": "21:00"
+      }
+    ]
+  },
+  "GOLD": {
+    "description": "Spot Gold vs US Dollar",
+    "point_size": 0.01,
+    "digits": 2,
+    "min_lot": 0.01,
+    "max_lot": 50.0,
+    "lot_step": 0.01,
+    "typical_spread_points": 56,
+    "max_allowed_spread_points": 120,
+    "contract_size": 100.0,
+    "trading_sessions_utc": [
+      {
+        "name": "London",
+        "start": "07:00",
+        "end": "16:00"
+      },
+      {
+        "name": "NewYork",
+        "start": "13:00",
+        "end": "21:00"
+      }
+    ]
+  },
+  "EURAUD": {
+    "description": "Euro vs Australian Dollar",
+    "point_size": 1e-05,
+    "digits": 5,
+    "min_lot": 0.01,
+    "max_lot": 50.0,
+    "lot_step": 0.01,
+    "typical_spread_points": 44,
+    "max_allowed_spread_points": 90,
+    "contract_size": 100000.0,
+    "trading_sessions_utc": [
+      {
+        "name": "Asian_Sydney",
+        "start": "22:00",
+        "end": "07:00"
+      },
+      {
+        "name": "London",
+        "start": "07:00",
+        "end": "16:00"
+      }
+    ]
+  }
+}

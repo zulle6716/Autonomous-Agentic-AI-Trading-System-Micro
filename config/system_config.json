@@ -1,0 +1,64 @@
+{
+  "system": {
+    "name": "Autonomous Agentic AI Trading System (Micro Edition)",
+    "version": "1.0.0-micro",
+    "edition": "MICRO",
+    "minimum_equity_usd": 100.0,
+    "target_monthly_profit_pct": 5.0,
+    "max_portfolio_drawdown_pct": 10.0,
+    "daily_loss_limit_pct": 2.0,
+    "max_concurrent_risk_pct": 2.0,
+    "base_risk_per_trade_pct": 0.4,
+    "max_risk_per_trade_pct": 1.0,
+    "trading_mode": "INTRADAY",
+    "close_positions_eod": true,
+    "eod_close_time_utc": "21:30",
+    "auto_detect_suffix": true,
+    "suffix_preferences": ["micro", "m", "c", ""]
+  },
+  "instruments": [
+    "EURAUDmicro",
+    "GOLDmicro",
+    "US100Cash"
+  ],
+  "fallback_instruments": {
+    "US100Cash": "USDJPYmicro"
+  },
+  "eas": {
+    "EA1": {
+      "name": "EA1_Trend_Momentum",
+      "magic_number": 101001,
+      "strategy": "Trend Continuation & Dynamic Pullbacks",
+      "target_regime": 1
+    },
+    "EA2": {
+      "name": "EA2_Mean_Reversion",
+      "magic_number": 102002,
+      "strategy": "Session Extremes & Value Fades",
+      "target_regime": 2
+    },
+    "EA3": {
+      "name": "EA3_Session_Breakout",
+      "magic_number": 103003,
+      "strategy": "Opening Range & Volatility Expansion",
+      "target_regime": 3
+    }
+  },
+  "benching": {
+    "max_consecutive_losses": 3,
+    "rolling_7d_drawdown_limit_pct": 3.0,
+    "rolling_trades_window": 15,
+    "min_profit_factor_threshold": 1.1,
+    "monte_carlo_simulations": 10000,
+    "max_acceptable_ruin_prob_pct": 1.0
+  },
+  "self_improvement": {
+    "cadence": "WEEKLY",
+    "run_day": "SATURDAY",
+    "run_time_utc": "02:00",
+    "min_out_of_sample_sharpe": 1.5,
+    "min_out_of_sample_profit_factor": 1.4,
+    "max_simulated_drawdown_pct": 6.5,
+    "auto_deploy_valid_params": true
+  }
+}

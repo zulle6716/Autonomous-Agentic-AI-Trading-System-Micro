@@ -1,0 +1,159 @@
+# ==============================================================================
+# Autonomous Agentic AI Trading System - Production .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Python Artifacts & Compilation Caches
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing, Profiling & Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# Type Checking & Linting
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# ------------------------------------------------------------------------------
+# 2. MetaTrader 5 (MT5) & MQL5 Binary & Execution Artifacts
+# ------------------------------------------------------------------------------
+# Compiled MQL5 Executables (Keep source .mq5/.mqh only)
+*.ex5
+*.ex4
+
+# MT5 Strategy Tester Cache & Tick Data Dumps
+tester/
+*.tst
+*.fxt
+*.hst
+ticks/
+bases/
+history/
+
+# Runtime Logs, Crash Dumps & Diagnostic Reports
+MQL5/Logs/
+src/mql5/Logs/
+*.log
+crashdumps/
+*.dmp
+*.core
+
+# Terminal Client Files (Keep .gitkeep in Files folders)
+MQL5/Files/*
+!MQL5/Files/.gitkeep
+src/mql5/Files/*
+!src/mql5/Files/.gitkeep
+
+# MetaEditor Temp & Backup
+.mt5tmp/
+*.bak
+
+# ------------------------------------------------------------------------------
+# 3. Antigravity IDE & Editor Artifacts
+# ------------------------------------------------------------------------------
+# Antigravity Agent Scratch, State & Conversation Logs
+.gemini/
+scratch/
+.system_generated/
+.brain/
+
+# VS Code / Cursor
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains (PyCharm / IntelliJ)
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Vim & Other Editors
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# ------------------------------------------------------------------------------
+# 4. OS-Specific Junk & File System Metadata
+# ------------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*

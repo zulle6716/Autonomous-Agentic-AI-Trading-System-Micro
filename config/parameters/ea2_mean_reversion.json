@@ -1,0 +1,13 @@
+{
+  "stop_loss_atr_mult": 1.1,
+  "bb_period": 20,
+  "rsi_oversold": 28.0,
+  "bb_deviation": 2.4,
+  "take_profit_rr_ratio": 1.9,
+  "magic_number": 102002,
+  "rsi_overbought": 72.0,
+  "max_holding_bars": 12,
+  "rsi_period": 14,
+  "max_slippage_points": 10,
+  "atr_period": 14
+}

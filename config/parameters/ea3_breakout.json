@@ -1,0 +1,13 @@
+{
+  "partial_close_pct": 50.0,
+  "stop_loss_atr_mult": 1.0,
+  "breakout_buffer_points": 40,
+  "range_lookback_bars": 18,
+  "magic_number": 103003,
+  "tp2_rr_ratio": 2.6,
+  "trail_after_tp1": true,
+  "max_slippage_points": 15,
+  "tp1_rr_ratio": 1.0,
+  "volume_filter_multiplier": 1.4,
+  "atr_period": 14
+}
